@@ -4,7 +4,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetch("https://ton-backend.onrender.com/users/1/tasks")
+    fetch("https://medbridge-backend.onrender.com/users/1/tasks")
       .then((res) => res.json())
       .then((data) => setTasks(data));
   }, []);
